@@ -10,6 +10,13 @@ func main() {
 	option := inputOption()
 	fmt.Println("Option ", option, ".")
 
+	name := getName()
+
+	namee, age := getNameAndAge()
+
+	fmt.Println(name)
+	fmt.Println(namee, age)
+
 }
 
 func showIntroduction() {
@@ -42,4 +49,15 @@ func inputOption() int {
 
 	return option
 
+}
+
+func getName() string {
+	name := "vitor"
+	return name
+}
+
+func getNameAndAge() (string, int) {
+	name := "vitor"
+	age := 24
+	return name, age
 }
