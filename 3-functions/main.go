@@ -11,12 +11,13 @@ func main() {
 	fmt.Println("Option ", option, ".")
 
 	name := getName()
+	fmt.Println(name)
 
 	namee, age := getNameAndAge()
-
-	fmt.Println(name)
 	fmt.Println(namee, age)
 
+	_, agee := getNameAndAge()
+	fmt.Println(agee)
 }
 
 func showIntroduction() {
