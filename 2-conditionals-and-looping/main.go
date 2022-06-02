@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 
@@ -28,5 +31,21 @@ func main() {
 		fmt.Println("Option 3")
 	default:
 		fmt.Println("Undefined")
+	}
+
+	for {
+		fmt.Scanf("%d", &option)
+
+		switch option {
+		case 1:
+			fmt.Println("Option 1")
+		case 2:
+			fmt.Println("option 2")
+		case 3:
+			fmt.Println("Option 3")
+		default:
+			fmt.Println("Undefined")
+			os.Exit(1)
+		}
 	}
 }
